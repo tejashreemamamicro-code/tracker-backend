@@ -1,0 +1,9 @@
+Flask==2.3.3
+Flask-Cors==4.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-Marshmallow==0.15.0
+marshmallow-sqlalchemy==0.29.0
+psycopg2-binary==2.9.9
+connexion==2.14.2
+SQLAlchemy==2.0.25
+reportlab==4.2.2
