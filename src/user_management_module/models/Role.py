@@ -35,6 +35,7 @@ class RoleSchema(SQLAlchemyAutoSchema):
     class Meta:
         model = Role
         include_fk = True
+        sqla_session = db.session
 
 role_schema = RoleSchema()
 roles_schema = RoleSchema(many=True)

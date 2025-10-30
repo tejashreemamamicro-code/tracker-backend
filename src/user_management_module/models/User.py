@@ -67,6 +67,7 @@ class UserSchema(SQLAlchemyAutoSchema):
     class Meta:
         model = User
         include_fk = True
+        sqla_session = db.session
 
 user_schema = UserSchema()
 users_schema = UserSchema(many=True)

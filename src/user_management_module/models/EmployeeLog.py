@@ -21,6 +21,7 @@ class EmployeeLogSchema(SQLAlchemyAutoSchema):
     class Meta:
         model = EmployeeLog
         include_fk = True
+        sqla_session = db.session
 
 employee_log_schema = EmployeeLogSchema()
 employees_log_schema = EmployeeLogSchema(many=True)

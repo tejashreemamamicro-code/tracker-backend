@@ -26,6 +26,7 @@ class Permissions(db.Model):
 class PermissionsSchema(SQLAlchemyAutoSchema):
     class Meta:
         model = Permissions
+        sqla_session = db.session
 
 permission_schema = PermissionsSchema()
 permissions_schema = PermissionsSchema(many=True)
